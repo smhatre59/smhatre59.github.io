@@ -12,6 +12,8 @@ class App extends React.Component {
           <div><img src={hosturl+"/assets/product1.png"} alt="product"/></div>
           <div><img src={hosturl+"/assets/product2.png"} alt="product"/></div>
           <div><img src={hosturl+"/assets/product3.png"} alt="product"/></div>
+          <div><img src={hosturl+"/assets/product4.png"} alt="product"/></div>
+          <div><img src={hosturl+"/assets/product5.png"} alt="product"/></div>
         </OwlCarousel>
       </div>
     )
@@ -30,6 +32,8 @@ class App extends React.Component {
             <div><img src={hosturl+"/assets/product1.png"} alt="product"/></div>
             <div><img src={hosturl+"/assets/product2.png"} alt="product"/></div>
             <div><img src={hosturl+"/assets/product3.png"} alt="product"/></div>
+            <div><img src={hosturl+"/assets/product4.png"} alt="product"/></div>
+            <div><img src={hosturl+"/assets/product5.png"} alt="product"/></div>
           </OwlCarousel>
         </div>
       )
