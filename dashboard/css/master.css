@@ -1,0 +1,415 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+/********
+header css
+***********/
+.header{
+  width: 100%;
+  height: 47px;
+  border-bottom: 1px #cecece solid !important;
+}
+.headerlogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  font-weight: bold;
+  color: white;
+  width: 20%;
+  height: 47px;
+  border-bottom: 1px #cecece solid !important;
+  background: #85b213;
+}
+
+.rightheader{
+  display: flex;
+  width: 80%;
+  float: right;
+  justify-content: flex-end;
+  height: 47px;
+  background-color: white;
+}
+
+.offerzone{
+font-size: 14px;
+font-weight: bold;
+line-height: 16px;
+background: url(../assets/border_strip.png) no-repeat 0 bottom;
+color: #000;
+margin: 0 16px 0 0;
+padding: 14px 0 17px;
+}
+
+.contactus{
+  color: #ce451b;
+  width: 10%;
+  height: 47px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.profile{
+  width: 20%;
+  height: 47px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.profilepic{
+
+width: 15%;
+display: flex;
+margin: auto;
+height: 30px;
+background: #5f6061 url(../assets/profilepic.jpeg) no-repeat;
+background-size: 100% 100%;
+}
+
+.profilename{
+  margin: auto;
+  font-size: 14px;
+  width: 85%;
+  padding-left: 10px;
+}
+
+/*Left selection*/
+.leftmenu{
+  float: left;
+  margin: 0px;
+  width:20%;
+  height: 600px;
+}
+
+ul.mtree {
+  opacity: 0;
+  margin: 0 auto;
+  padding: 0px;
+}
+ul.mtree ul {
+  margin-left: 10px;
+}
+ul.mtree > li {
+  font-size: 13px;
+  line-height: 2.5em;
+  border: 1px #d6d6d6 solid;
+  font-family: "ubunturegular";
+  display: block;
+  list-style: none;
+}
+ul.mtree a {
+  display: block;
+  text-decoration: none;
+}
+
+ul.mtree a {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+ul.mtree.transit a {
+  padding: 5px 0px 5px 0.8em;
+  color: #000;
+}
+
+ul.mtree.transit {
+  background: #ffffff;
+}
+ul.mtree.transit ul {
+  margin-left: 0;
+}
+ul.mtree.transit ul > li {
+  font-size: 13px;
+  color: #ce451b;
+  list-style: none;
+}
+ul.mtree.transit li.mtree-node {
+  position: relative;
+}
+
+ul.mtree.transit li.mtree-node > a:before {
+  color: #000000;
+  font-weight: normal;
+  position: absolute;
+  right: 20px;
+}
+ul.mtree.transit li.mtree-open > a:before {
+  content: '-';
+}
+ul.mtree.transit li.mtree-closed > a:before {
+  content: '+';
+}
+ul.mtree.transit ul > li:first-child {
+  margin-top: 1px;
+}
+ul.mtree.transit li.mtree-open > a {
+  background: #6ac451;
+}
+ul.mtree.transit li > a:hover, ul.mtree.transit li.mtree-active > a {
+  background: #6ac451;
+  color: #FFF;
+}
+ul.mtree.transit li.mtree-node:last-child > ul > li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/*Right container*/
+.rightcontainer{
+  margin: 0px;
+  width:80%;
+  float: left;
+}
+
+.rightcontent{
+  padding: 0px 20px 25px 25px;
+  position: relative;
+}
+.righttitle{
+  font-size: 20px;
+  line-height: 13px;
+  font-weight: normal;
+  color: #444;
+  padding-top: 0px;
+  margin-bottom: 15px;
+}
+.rightcontent h3{
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: normal;
+  color: #444;
+  padding-top: 7px;
+  margin-bottom: 15px;
+}
+
+.paymentbox{
+  display: inline-block;
+  width: 312px;
+  position: relative;
+  height: 84px;
+  margin: 0 35px 20px 0;
+}
+
+.paymentbox1{
+  border: 1px #ccc solid;
+  float: left;
+  position: absolute;
+  left: 6px;
+  width: 300px;
+  bottom: 0;
+  height: 20px;
+  z-index: 1
+}
+
+.paymentbox2{
+  border: 1px #ccc solid;
+  float: left;
+  position: absolute;
+  left: 3px;
+  width: 306px;
+  bottom: 2px;
+  height: 20px;
+  background: #fff;
+  z-index: 2;
+}
+.paymentbox3{
+  float: left;
+  width: 310px;
+  border: 1px #ccc solid;
+  height: 78px;
+  display: flex;
+  align-items : center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  background-color: #fff;
+}
+.paymenticon{
+  display: inline-block;
+  width: 40px;
+  height: 42px;
+  background: url(../assets/gificon.png) no-repeat;
+  background-size: 100% 100%;
+  margin: 16px 0 20px 22px;
+}
+.righttext{
+  padding: 20px 0px 20px 30px;
+  float: right;
+  font-size: 12px;
+  color: #8c8b8b;
+}
+.rightcoupon{
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'ubunturegular';
+  color: #000;
+  line-height: 22px;
+  float: left;
+  padding-top: 5px;
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.listing{
+  border: 1px #cecece solid;
+}
+.heading{
+  color: #333;
+font-weight: normal;
+min-height: 38px;
+text-shadow: 1px 1px #fff;
+font-size: 13px;
+line-height: 15px;
+background: #e8e8e9;
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+.headingicon{
+  display: inline-block;
+  background: url(../assets/payment.png) no-repeat;
+  background-size: 100% 100%;
+  width: 22px;
+  height: 20px;
+  margin: 16px 7px 14px 10px;
+}
+.headingtext{
+    display: inline-block;
+    border-left: 1px #cecece solid;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.innerlisting{
+  padding: 12px;
+}
+
+.listingtable{
+border: 1px #cecece solid;
+display: inline-block;
+margin-bottom: 15px;
+width: 100%;
+color: #666;
+text-align: center;
+}
+
+.theading{
+  background-color : #f2f2f2;
+  color: #666;
+}
+.listingtable h6{
+  color: #666;
+font-size: 12px;
+}
+.tdate{
+  width: 15%;
+ text-align: center;
+}
+
+.tmername{
+  width: 21%;
+}
+.tablesearchouter{
+  padding: 0 15px 0 0;
+}
+.tsearchinner{
+  border: 1px #acacac solid;
+border-radius: 2px;
+background: #fff;
+height: 25px;
+}
+
+.tsearchicon{
+  float: right;
+background: url(../assets/search.png) no-repeat;
+background-size: 100% 100%;
+width: 14px;
+height: 15px;
+margin: 6px 6px 0 0px;
+}
+.inputbox{
+  text-align: left;
+margin: 0px 20px 0 0px;
+}
+.tmernameinput{
+display: inline-block;
+border: none;
+background: none;
+font-size: 12px;
+color: #444;
+width: 90%;
+}
+
+.tmernameinput__input{
+  display: inline-block;
+  border: none;
+  background: none;
+  font-size: 12px;
+  color: #444;
+  width: 90%;
+}
+.tmernameinput__menu{
+  opacity: 0;
+}
+.tmerorderid{
+ width: 18%;
+}
+
+.tpaymentid{
+  width: 14%;
+}
+
+.tamount{
+ width:10%;
+}
+
+.tpaymentstatus{
+  width: 15%;
+}
+
+.tactions{
+  width: 14%;
+  text-align: center;
+}
+
+.trow{
+  font-size: 15px;
+  color: #666;
+  padding: 12px;
+  line-height: 40px;
+}
+
+.noresults{
+  text-align: center;
+}
+
+.datefilter{
+  font-size: 11px;
+  float: right;
+  margin-top: 0;
+  margin-bottom: 0px;
+  list-style: none;
+  padding: 0px;
+  border: 1px #ACACAC solid;
+  border-radius: 2px;
+  background: rgb(255,255,255);
+}
+.reactable-previous-page, .reactable-next-page, .reactable-page-button, .reactable-current-page{
+  color: red;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 16px;
+  border: 0;
+  outline:none;
+}
