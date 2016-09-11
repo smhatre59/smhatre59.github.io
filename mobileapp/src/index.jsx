@@ -45,7 +45,7 @@ class App extends React.Component {
       for(var i=0;i<4;i++){
         videocontent.push(
             <div className="jumbotron">
-              <video width="100%" controls poster="../assets/poster.png"> 
+              <video width="100%" controls poster={hosturl+"/assets/poster.png"}> 
                       <source src={hosturl+"/assets/video.mp4"} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
