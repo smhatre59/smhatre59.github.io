@@ -1,16 +1,17 @@
 import React from 'react';
 import {render} from 'react-dom';
 import OwlCarousel from 'react-owl-carousel';
+var hosturl="http://smhatre59.github.io/mobileapp"
 class App extends React.Component {
   constructor(props){
     super(props);
-    var maincontent = [];
+    var maincontent = [];;
     maincontent.push(
       <div className="slider">
         <OwlCarousel slideSpeed={300} navigation autoPlay >
-          <div><img src="../assets/product1.png" alt="product"/></div>
-          <div><img src="../assets/product2.png" alt="product"/></div>
-          <div><img src="../assets/product3.png" alt="product"/></div>
+          <div><img src={hosturl+"/assets/product1.png"} alt="product"/></div>
+          <div><img src={hosturl+"/assets/product2.png"} alt="product"/></div>
+          <div><img src={hosturl+"/assets/product3.png"} alt="product"/></div>
         </OwlCarousel>
       </div>
     )
@@ -26,9 +27,9 @@ class App extends React.Component {
       maincontent.push(
         <div className="slider">
           <OwlCarousel slideSpeed={300} navigation autoPlay >
-            <div><img src="../assets/product1.png" alt="product"/></div>
-            <div><img src="../assets/product2.png" alt="product"/></div>
-            <div><img src="../assets/product3.png" alt="product"/></div>
+            <div><img src={hosturl+"/assets/product1.png"} alt="product"/></div>
+            <div><img src={hosturl+"/assets/product2.png"} alt="product"/></div>
+            <div><img src={hosturl+"/assets/product3.png"} alt="product"/></div>
           </OwlCarousel>
         </div>
       )
@@ -45,7 +46,7 @@ class App extends React.Component {
         videocontent.push(
             <div className="jumbotron">
               <video width="100%" controls poster="../assets/poster.png"> 
-                      <source src="../assets/video.mp4" type="video/mp4" />
+                      <source src={hosturl+"/assets/video.mp4"} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -93,20 +94,20 @@ class App extends React.Component {
         </div>
         <div className="playbackcontainer">
           <div className="playicon">
-            <img src="../assets/rewind.png" className="ordericonimg" />
+            <img src={hosturl+"/assets/rewind.png"} className="ordericonimg" />
           </div>
           <div className="playiconmain">
-            <img src="../assets/play.png" className="ordericonimg" />
+            <img src={hosturl+"/assets/play.png"} className="ordericonimg" />
           </div>
           <div className="playicon">
-            <img src="../assets/forward.jpeg" className="ordericonimg" />
+            <img src={hosturl+"/assets/forward.jpeg"} className="ordericonimg" />
           </div>
         </div>
         {this.state.maincontent}
         <div className="ordercontainer">
           <div className="orderbox">
             <div className="ordericon">
-              <img src="../assets/basket.jpeg" className="ordericonimg" />
+              <img src={hosturl+"/assets/basket.jpeg"} className="ordericonimg" />
             </div>
             <div className="itunes">
               <a className="button" href="#">ORDER ON ITUNES</a>
@@ -119,19 +120,19 @@ class App extends React.Component {
         <div className="sociallogin">
           <div className="socialcontainer">
               <div className="socialicon">
-                <img src="../assets/fb.png" alt="fb" className="socialimg"/>
+                <img src={hosturl+"/assets/fb.png"} alt="fb" className="socialimg"/>
               </div>
               <div className="socialicon">
-                <img src="../assets/twitter.png" alt="fb" className="socialimg"/>
+                <img src={hosturl+"/assets/twitter.png"} alt="fb" className="socialimg"/>
               </div>
               <div className="socialicon">
-                <img src="../assets/tumblr.png" alt="fb" className="socialimg"/>
+                <img src={hosturl+"/assets/tumblr.png"} alt="fb" className="socialimg"/>
               </div>
               <div className="socialicon">
-                <img src="../assets/vimeo.png" alt="fb" className="socialimg"/>
+                <img src={hosturl+"/assets/vimeo.png"} alt="fb" className="socialimg"/>
               </div>
               <div className="socialsignup">
-                <img src="../assets/signup.png" alt="fb" className="socialimg"/>
+                <img src={hosturl+"/assets/signup.png"} alt="fb" className="socialimg"/>
               </div>
 
           </div>
