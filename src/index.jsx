@@ -25,7 +25,7 @@ class Header extends React.Component {
       <Navbar.Brand>
         <div className="flexdiv">
           <Image src={hosturl+"/assets/profile.png"} className="profile" rounded responsive/>
-          <a href="#" className="headertitle">Portfolio</a>
+          <a href="#" className="headertitle">Saurabh_Mhatre</a>
         </div>
       </Navbar.Brand>
       <Navbar.Toggle />
@@ -165,7 +165,9 @@ class Page extends React.Component{
     <Row className="show-grid">
       <a name="about"></a>
       <Col xs={12}  sm={12} md={6} className="about flexdiv">
-        <h1>About</h1>
+        <div className="circleheading flexdiv">
+          <h1 className="pageheading">About</h1>
+        </div>
       </Col>
       <Col xs={12}  sm={12} md={6} className="aboutcontents aboutpagecontainer flexdiv">
         <table>
@@ -234,9 +236,9 @@ class Page extends React.Component{
     <Row className="show-grid">
       <a name="work"></a>
       <Col xs={12}  sm={12} md={6} className="work flexdiv">
-        <h1>
-          Work
-        </h1>
+        <div className="circleheading flexdiv">
+          <h1 className="pageheading">Work</h1>
+        </div>
       </Col>
       <Col xs={12}  sm={12} md={6} className="workcontents  flexdiv">
         <table>
@@ -290,9 +292,9 @@ class Page extends React.Component{
     <Row className="show-grid">
       <a name="contact"></a>
       <Col xs={12}  sm={12} md={6} className="contact flexdiv">
-        <h1>
-          Contact
-        </h1>
+        <div className="circleheading flexdiv">
+          <h1 className="pageheading">Contact</h1>
+        </div>
       </Col>
       <Col xs={12}  sm={12} md={6} className="contactcontents flexdiv">
         <table>
