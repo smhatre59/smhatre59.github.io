@@ -15,7 +15,7 @@ import {
   ProgressBar,
   Row,
   } from 'react-bootstrap';
-var hosturl="";
+var hosturl="https://smhatre59.github.io";
 class Header extends React.Component {
   render () {
     return (
