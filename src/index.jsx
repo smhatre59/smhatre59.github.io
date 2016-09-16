@@ -143,7 +143,7 @@ class Page extends React.Component{
                  modalbody.push(
                    <div>
                      Developed sample git repos for react and nodejs at:<br/>
-                   <a href="https://www.github.com/smhatre59" target="_blank">gitrepos</a>
+                   <a href="https://www.github.com/smhatre59" target="_blank" onClick={() => self.setState({showModal:false})}>gitrepos</a>
                    </div>
                  );
                   self.setState({
