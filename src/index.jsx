@@ -15,6 +15,7 @@ import {
   ProgressBar,
   Row,
   } from 'react-bootstrap';
+  // var hosturl = "http://localhost:8080/"
 var hosturl="https://smhatre59.github.io";
 class Header extends React.Component {
   render () {
@@ -68,8 +69,19 @@ class Page extends React.Component{
        );
        modalbody.push(
          <div>
-           Developed backend apis for mobile and web applications in nodejs
-         </div>
+           Developed backend apis for mobile and web applications in Node.js for commercial and personal projects.
+            <br></br>
+           <b>Personal Projects:</b>
+           <br></br>
+           <ul>
+           <li>
+             Backend apis for Attendance tracking project(Express framework & mongodb for backend database) => <a href="https://github.com/smhatre59/attendancetracking">Github</a>
+           </li>
+           <li>
+             Backend apis for handling file upload to server and store files securely on server => <a href="https://github.com/smhatre59/filehandling">Github</a>
+            </li>
+          </ul>
+          </div>
        );
         self.setState({
           modalheading:modalheading,
@@ -83,7 +95,38 @@ class Page extends React.Component{
          );
          modalbody.push(
            <div>
-             Developed web app for video streaming app in reactjs.
+             Developed web app for content video streaming in reactjs
+             <br></br>
+            <b>Personal Projects:</b>
+            <br></br>
+            <ul>
+            <li>
+              Attendance tracking project(MERN stack)=><a href="https://smhatre59.github.io/attendance/" target="_blank">Live sample</a>
+              <br></br>
+              <a href="https://github.com/smhatre59/attendancetracking">Github</a>
+            </li>
+            <li>
+              Simple dashboard:<a href="https://smhatre59.github.io/dashboard/" target="_blank">Live Sample</a>
+            </li>
+            <li>
+              Simple mobile app:<a href="https://smhatre59.github.io/mobileapp/" target="_blank">Live Sample</a>
+            </li>
+            <li>
+              T9 keyboard using react:<a href="https://smhatre59.github.io/reactt9/" target="_blank">Live Sample</a>
+              <br></br>
+              <a href="https://github.com/smhatre59/reactt9" target="_blank">Github</a>
+            </li>
+            <li>
+              Basic user profiles app using react and redux:<a href="https://github.com/smhatre59/Reactreduxuserapp">Github</a>
+            </li>
+            <li>
+              Grid using react:<a href="https://github.com/smhatre59/reactgrid">Github</a>
+            </li>
+            <li>
+              This site itself is a react project made using react-bootstrap
+            </li>
+           </ul>
+
            </div>
          );
           self.setState({
@@ -98,7 +141,11 @@ class Page extends React.Component{
            );
            modalbody.push(
              <div>
-               Developed hybrid app in react native for video streaming.
+               Developed hybrid app in react native in ios for video streaming
+               <br></br>
+               <b>Personal projects:</b>
+               <br></br>
+             Currently working on interview based app in react native
              </div>
            );
             self.setState({
@@ -109,11 +156,14 @@ class Page extends React.Component{
             break;
             case "fourth":
              modalheading.push(
-               <div><h2>Chef</h2></div>
+               <div><h2>Chef & Docker</h2>
+               </div>
              );
              modalbody.push(
                <div>
-                 Developed build automation framework for automating android build creation.
+                 Developed build automation framework for automating android build creation using chef framework.
+                 <br></br>
+                 Developed docker container for handling various application stacks
                </div>
              );
               self.setState({
@@ -128,7 +178,7 @@ class Page extends React.Component{
                );
                modalbody.push(
                  <div>
-                   Developed custom dashboard for cloud deployment on remote workstation using openstack.
+                   Developed custom dashboard for cloud deployment on remote workstation using Openstack framework,Ubuntu MAAS and KVM virtualization.
                  </div>
                );
                 self.setState({
@@ -144,7 +194,7 @@ class Page extends React.Component{
                  modalbody.push(
                    <div>
                      Developed sample git repos for react and nodejs at:<br/>
-                   <a href="https://www.github.com/smhatre59" target="_blank" onClick={() => self.setState({showModal:false})}>gitrepos</a>
+                   <a href="https://www.github.com/smhatre59" target="_blank" onClick={() => self.setState({showModal:false})}>Github</a>
                    </div>
                  );
                   self.setState({
@@ -181,7 +231,8 @@ class Page extends React.Component{
             I finished my engineering in Computer Science from R.A.I.T.
             Starting with project internship in cloud computing and website designing,
             I entered into the industry as mobile applications developer. I am currently
-            working in hybrid and native mobile application development.
+            working in web and hybrid mobile application development and write technical articles on my blog
+            (<a href="http://technoetics.in">Technoetics</a>)
           </tr>
           <tr>
             <b>
@@ -194,7 +245,7 @@ class Page extends React.Component{
             </b>
             </tr>
             <tr>
-                HTML,CSS,JS:
+                HTML,CSS3,JS:
             </tr>
             <tr>
               <ProgressBar striped bsStyle="info" now={80} />
@@ -224,7 +275,7 @@ class Page extends React.Component{
               <ProgressBar striped bsStyle="info" now={60} />
             </tr>
             <tr>
-                Apple tv(TVML & TVJS):
+                Apple TV IOS(TVML,TVJS):
             </tr>
             <tr>
               <ProgressBar striped bsStyle="warning" now={70} />
@@ -268,7 +319,9 @@ class Page extends React.Component{
               <Row className="gridrow">
                 <Col xs={12}  sm={4} md={4}>
                   <div className="responsive-circle firstcircle" onClick={() => self.modalOpen("fourth")}>
-                      <div className="circle-inner">Chef</div>
+                      <div className="circle-inner">
+                        Devops
+                      </div>
                   </div>
                 </Col>
                 <Col xs={12}  sm={4} md={4}>
@@ -314,9 +367,24 @@ class Page extends React.Component{
             smhatre59@gmail.com
           </tr>
           <tr>
+            <br></br>
+            Also check out my blog for technical articles and posts:
+            <br></br>
+            <a href="http://technoetics.in" target="_blank">
+            Technoetics
+            </a>
+          </tr>
+          <tr>
+            <div class="social">
+            Linked Profile:
             <a href="https://www.linkedin.com/in/saurabh-mhatre" target='_blank' className="linkedinlink">
               <Image src={hosturl+"/assets/linkedin.png"} className="linkedin" responsive/>
             </a>
+            Github Account:
+            <a href="https://github.com/smhatre59" target='_blank' className="linkedinlink">
+              <Image src={hosturl+"/assets/githubicon.png"} className="linkedin" responsive/>
+            </a>
+            </div>
           </tr>
         </table>
       </Col>
